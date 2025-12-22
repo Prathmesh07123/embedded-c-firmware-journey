@@ -21,7 +21,7 @@ int main(void)
     uint8_t odd_count  = 0;
 
     for(i = 0; i < ARRAY_SIZE; i++){
-        if((data_buffer[i] % 2) == 0){
+        if((data_buffer[i] & 1) == 0){  //Instead of % use bitwise & operater better for MCU Operation
             even_count++;
         }
         else{
