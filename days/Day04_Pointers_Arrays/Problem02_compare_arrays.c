@@ -2,8 +2,10 @@
  * Problem: Compare Two Arrays Using Pointers
  *
  * Firmware Usage:
- * Used in signal processing buffers, DMA data reordering,
- * endianness correction, and sample post-processing.
+ * - UART / SPI / I2C RX buffer validation
+ * - DMA buffer integrity checks
+ * - Protocol frame comparison (SBUS, MAVLink, AT commands)
+ * - Sensor data consistency verification
  */
 
 #include <stdint.h>
@@ -33,7 +35,6 @@ int8_t compare_buffer(const uint16_t *buf1, const uint16_t *buf2, uint8_t len1, 
 }
 
 
-
 int main(void){
 
     uint16_t buffer1[MAX_SIZE] = {10, 20, 30, 40, 50};
@@ -52,8 +53,7 @@ int main(void){
     else if(compare == -2){
         printf("Arrays Data mismatch!\n");
     }
-
-    
+  
 
     return 0;
 }
