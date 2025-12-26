@@ -42,7 +42,7 @@ This repository documents my **day-by-day progress**
 - [x] Day 01 – Arrays Basics
 - [x] Day 02 – Array Operations
 - [x] Day 03 – Pointers
-- [ ] Day 04 – Pointer + Arrays
+- [x] Day 04 – Pointer + Arrays
 - [ ] Day 05 – Strings
 - ⏳ Continuing daily…
 
